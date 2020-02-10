@@ -1,11 +1,13 @@
 
 body {
 	font-family: Arial;
-	
+	padding: 20px;
 	}
 #logo{
 	position:fixed;
-	border-radius: 30%;
+	border-radius: 20%;
+	width:5%;
+	height:auto;
 	}
 .tab {
 	color: rgba(40,26,23,.8);
@@ -19,8 +21,7 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 22px;
-}
+  }
 .tab button:hover {
   background-color: pink;
 }
@@ -44,8 +45,7 @@ body{
    bottom: 0;
    width: 100%;
    box-sizing: border-box;
-  bolder:solid;
-}
+  }
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -65,57 +65,31 @@ body{
 .fa-linkedin {
   background: #55ACEE;
   color: white;
+  height: auto;
 }
 .fa-instagram {
   background: #dd4b39;
   color: white;
+  height: auto;
 }
 #im{
 	background-color:#e0ebeb;	
 }
 
 .smaller-image2{
- width:200px;
+ width:12%;
  height: auto;
- margin:  50 auto
+ margin:  50 auto;
+ border-radius:30%;
 }
-.image-border2{
-border-color:white;
-border-width:10px;
-border-style:solid;
-border-radius:40%;
-}
+
 #img1 {
   float: left;
-  border: 1px dotted black;
-  margin: 10px 10px 30px 100px;
 }
-#txt{
-font-size:20px;
-}
+
 #aa{
 float:rightwards;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  font-size:30px;
-}
-tr {
-  background-color: #dddddd;
-}
-{
-box-sizing: border-box;
-}
-body {
-	font-family: Verdana, sans-serif;
-	}
 .mySlides {
 	display: none;
 	}
@@ -123,48 +97,15 @@ img {
 	vertical-align: middle;
 	}
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
 .main {
   max-width: 1000px;
   margin: auto;
 }
 
 h1 {
-  font-size: 50px;
+  color:black;
+  text-align: center;
   word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
 }
 
 
@@ -172,43 +113,9 @@ h1 {
   float: left;
   width: 25%;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .content {
   background-color: white;
   padding: 10px;
-}
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-#slider {
-    margin: 10px 100px 0px 150px;
-	overflow: hidden;
-	text-align: center;
-	height:500px;
-}
-
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 15s slider infinite;
-}
-#slider figure img {
-	width: 20%;
-	float: left;
 }
 
 @keyframes slider {
@@ -241,9 +148,8 @@ h1 {
 	}
 }
 
-{
-  box-sizing: border-box;
-}
+
+
 
 .row > .column {
   padding: 8px;
@@ -265,7 +171,7 @@ h1 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -280,23 +186,23 @@ h1 {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  max-width: 750px;
 }
 
 /* The Close Button */
 .close {
-  color: white;
+  color: #01ef97;
   position: absolute;
   top: 10px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  opacity: 1;
 }
 
 .close:hover,
 .close:focus {
-  color: #999;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
@@ -375,32 +281,17 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-img {
-  margin-bottom: -4px;
-}
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-.demo {
-  opacity: 0.6;
-}
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
+.carousel-inner img {
+      width: 100%;
+      height: auto;
+	  padding-left:70px;
+	  padding-right:70px;
+	  animation: 15s slider infinite;
+	  float:left;	
+      max-height:700px;	
+      max-width:1600px;	
+  }
+ 
 
 
 

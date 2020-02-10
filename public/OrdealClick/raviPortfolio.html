@@ -8,49 +8,75 @@
 		<link rel="stylesheet" type="text/css" href="corparate.html"/>				
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
 		<div class="tab">
-				<button onClick="window.location.href ='#f';"><strong>Contact</strong></button>
-				<button onClick="window.location.href = '#about';"><strong>About</strong></button>
-				<button onclick="window.location.href = 'raviPortfolio.html';"><strong>Home</strong></button>
-				<button onclick="window.location.href = '#social';"><strong>OrdealClicks</strong></button>
+				<button style="font-size:2vw" onClick="window.location.href ='#f';"><strong>Contact</strong></button>
+				<button style="font-size:2vw" onClick="window.location.href = '#about';"><strong>About</strong></button>
+				<button style="font-size:2vw" onclick="window.location.href = 'raviPortfolio.html';"><strong>Home</strong></button>
+				<button style="font-size:2vw" onclick="window.location.href = '#social';"><strong>OrdealClicks</strong></button>
 				<a href="raviPortfolio.html"><img id='logo' src="../photos/logo1.jpg"></a>		
 		</div>	
-			<div id="slider">
-				<figure>
-					<img src="../photos/Portrait/p1.jpeg">
-					<img src="../photos/Events/e4.jpeg">
-					<img src="../photos/Events/e1.jpeg">
-					<img src="../photos/Corporate/c4.jpeg">
-					<img src="../photos/Portrait/p6.jpeg">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+					<figure>
+						<div class="carousel-item active">
+						  <img src="../photos/Portrait/p1.jpeg">
+						</div>
+						<div class="carousel-item">
+						  <img src="../photos/Events/e4.jpeg">
+						</div>
+							<div class="carousel-item">
+						  <img src="../photos/Events/e1.jpeg">
+						</div>
+							<div class="carousel-item">
+						  <img src="../photos/Corporate/c4.jpeg">
+						</div>
+						<div class="carousel-item">
+						  <img src="../photos/Portrait/p6.jpeg">
+						</div>
+						</figure>
+				</div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 				</figure>
 			</div>		
-				<h1 style='color:black;text-align: center'><strong>OrdealClicks</strong></h1>
-				<h3 style='color: rgba(40,26,23,.8);text-align:center'><strong>Photographer</h3>
+				<h1 style="font-size: 3vw"><strong>OrdealClicks</strong></h1>
+				<h3 style='color: rgba(40,26,23,.8);text-align:center;font-size: 2vw'><strong>Photographer</h3>
 				<hr>		
 				<div class="main" id='social'>
-					<h2><strong>Social</strong></h2>
-					<h3 style='color: rgba(40,26,23,.8)'>Follow my work on <a href="https://www.instagram.com/ordeal_clicks/" target="_blank" style="color:#ac39ac">Instagram<strong/></h3>
+					<h2 style="font-size: 3vw"><strong>Social</strong></h2>
+					<h3 style='color: rgba(40,26,23,.8);font-size:2vw'>Follow my work on <a href="https://www.instagram.com/ordeal_clicks/" target="_blank" style="color:#ac39ac">Instagram<strong/></h3>
 					 </a>
 					<div class="row">
 						<div class="column">
 							<div class="content">
-								<a href="corparate.html"><img src="../photos/Corporate/c8.jpeg" style="width:100%"></a>
-									<h3>Corparate</h3>
+								<a href="corparate.html"><img src="../photos/Corporate/c8.jpeg" style="width:100%"></a><hr>
+									<h3 style="font-size: 2vw">Corparate</h3>
 							</div>
 						</div>
 						<div class="column">
 							<div class="content">
-								<a href="events.html"><img src="../photos/Events/e3.jpeg" style="width:100%"></a>
-									<h3>Events</h3>
+								<a href="events.html"><img src="../photos/Events/e3.jpeg" style="width:100%"></a><hr>
+									<h3 style="font-size: 2vw">Events</h3>
 							</div>
 						</div>
 						<div class="column">
 							<div class="content">
-								<a href="portrait.html"><img src="../photos/Portrait/p4.jpeg" style="width:100%"></a>
-									<h3>Portrait</h3>
+								<a href="portrait.html"><img src="../photos/Portrait/p4.jpeg" style="width:100%"></a><hr>
+									<h3 style="font-size: 2vw">Portrait</h3>
 							</div>
 						</div>
 	
@@ -58,26 +84,34 @@
 					<hr>
 				</div>
 		<div>
-			<img src="../photos/Admin/A1.jpeg" class="smaller-image2 image-border2" id='img1'>		
-			<h3 id='about'><strong>About Me:</strong></h3>			
-			<h3 id='txt'>When words become unclear, I shall focus with photographs.
-			When images become inadequate, I shall be content with silence.The people who
-			hire me as a wedding photographer hire me not
-			just because of my photographic style, they hire me because of the style of 
-			my personality. My style and personality match, so they know they’re getting 
-			a genuine style.</h3>		
+			<img src="../photos/Admin/A1.jpeg" class="smaller-image2" id='img1' >		
+			<h3 id='about' style="font-size:2vw ;padding-left: 10pc"><strong>About Me:</strong></h3>			
+			<h4 id='txt' style="padding-left: 10pc;font-size:1.5vw">Photography is not only about 
+			capturing the images but also about freezing the moment for a lifetime. Talking about
+			myself, I am an aspiring photographer who is always on his toes to borrow some moments 
+			from one’s life and freeze it in the form of a photograph. For this, I try to capture
+			natural and elegant portraits that could open doors to memories from the past. In 
+			addition to the portraits and candid pictures, I love to capture events and corporate
+			outings as well.In case, you are concerned about my work ethics and professionalism,
+			then I would ask you to give me a chance rather than boasting about myself. And when it
+			comes to tools that I use for photography, it is my eyes through which I lock the beauty
+			forever.Bangalore is the current location where I am trying to capture the emotions and 
+			beauty in its every form. So, please come and watch your emotions turning into images to
+			be cherished forever.
+
+			 </h4>		
 		</div>
-		</div>
+	
 		<div id='f'>
 			<hr>
 			<footer>
-				<h2 id="f">OrdealClicks</h2>
-				<a href="https://www.facebook.com/profile.php?id=100040846420082" target="_blank" class="fa fa-facebook"></a>
-				<a href="https://www.linkedin.com/in/ravi-shankar-847a25183" target="_blank" class="fa fa-linkedin"></a>
-				<a href="https://www.instagram.com/ordeal_clicks/" target="_blank" class="fa fa-instagram"></a>
+				<h2 id="f" style="font-size:1.5vw">OrdealClicks</h2>
+				<a style="font-size:1vw" href="https://www.facebook.com/profile.php?id=100040846420082" target="_blank" class="fa fa-facebook"></a>
+				<a style="font-size:1vw" href="https://www.linkedin.com/in/ravi-shankar-847a25183" target="_blank" class="fa fa-linkedin"></a>
+				<a style="font-size:1vw" href="https://www.instagram.com/ordeal_clicks/" target="_blank" class="fa fa-instagram"></a>
 				<br>
-				<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"<h5>abhimanyuincyber@gmail.com</h5></a>
-				<h3>Copyright © OrdealClick.in</h3>
+				<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"<h5 style="font-size:1.5vw">221194oliver@gmail.com</h5></a>
+				<h3 style="font-size:1.5vw">Copyright © OrdealClick.in</h3>
 		   </footer>
 	   </div>
 	</body>
